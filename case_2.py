@@ -59,15 +59,15 @@ class MembershipUser():
         category = self.predict_membership()
 
         if category == 'Platinum':
-            total_price = (sum(list_harga_barang))-(sum(list_harga_barang)*0.15)
+            total_price = (sum(list_harga_barang))-(sum(list_harga_barang)*0.2)
             print(total_price)
 
         elif category == 'Gold':
-            total_price = (sum(list_harga_barang))-(sum(list_harga_barang)*0.1)
+            total_price = (sum(list_harga_barang))-(sum(list_harga_barang)*0.15)
             print(total_price)
 
         elif category == 'Silver':
-            self.total_price = (sum(list_harga_barang))-(sum(list_harga_barang)*0.05)
+            self.total_price = (sum(list_harga_barang))-(sum(list_harga_barang)*0.1)
             print(total_price)
 
 
@@ -79,6 +79,10 @@ user_3 = MembershipUser('Cahya', 5, 12)
 user_4 = MembershipUser('Shandy', 7, 11)
 
 # Case 1
+print(user_1.show_benefit())
+print(user_1.show_requirements())
+print(user_1.predict_membership())
+print(user_1.calculate_price([300_000, 150_000, 140_000]))
 
 # Case 2
 print(user_2.predict_membership())
