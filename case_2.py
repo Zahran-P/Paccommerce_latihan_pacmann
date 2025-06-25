@@ -20,7 +20,7 @@ class MembershipUser():
                  ['Silver', '8%','Voucher makanan']
                  ]
         
-        headers = [['Membership', 'Discount', 'Another benefit']]
+        headers = ['Membership', 'Discount', 'Another benefit']
 
         print('Benefit Membership PacCommerce')
         print('')
@@ -32,7 +32,7 @@ class MembershipUser():
                  ['Silver', '5', '7']
                  ]
 
-        headers =[['Membership', 'Monthly Expense (million)', 'Monthly Income (Million)']]
+        headers =['Membership', 'Monthly Expense (million)', 'Monthly Income (Million)']
 
         print('Requirements Membership PacCommerce')
         print('')
